@@ -1,33 +1,6 @@
-// import { Suspense } from 'react'
-// import { useAspect, useVideoTexture, useTexture } from '@react-three/drei'
-
-// export default function Video() {
-//   const size = useAspect(1800, 1000)
-//   return (
-//     <mesh scale={size}>
-//       <planeGeometry />
-//       <Suspense fallback={<FallbackMaterial url="/static/wall.jpg" />}>
-//         <VideoMaterial url="/static/video.mp4" />
-//       </Suspense>
-//     </mesh>
-//   )
-// }
-
-// function VideoMaterial({ url }) {
-//   const texture = useVideoTexture(url)
-//   return <meshBasicMaterial map={texture} toneMapped={false} />
-// }
-
-// function FallbackMaterial({ url }) {
-//   const texture = useTexture(url)
-//   return <meshBasicMaterial map={texture} toneMapped={false} />
-// }
-
-
 import { useVideoTexture } from "@react-three/drei"
 import { DoubleSide } from "three"
 import { useRef,useEffect, useState } from "react"
-
 
 export default function Video() {
     
